@@ -24,19 +24,19 @@ const data =[
 
   {
     avatar: AVTR2,
-    name:"Skipthedishes",
+    name:"Coding",
     review: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti deleniti dolores est tempora accusantium laudantium commodi adipisci eos blanditiis. Fuga optio dolorem officiis quis assumenda modi vel nesciunt error repudiandae.",
   },
 
   {
     avatar: AVTR3,
-    name:"Skipthedishes",
+    name:"Hiking",
     review: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti deleniti dolores est tempora accusantium laudantium commodi adipisci eos blanditiis. Fuga optio dolorem officiis quis assumenda modi vel nesciunt error repudiandae.",
   },
 
   {
     avatar: AVTR4,
-    name:"Skipthedishes",
+    name:"Reading",
     review: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti deleniti dolores est tempora accusantium laudantium commodi adipisci eos blanditiis. Fuga optio dolorem officiis quis assumenda modi vel nesciunt error repudiandae.",
   }
 ]

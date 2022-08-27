@@ -40,7 +40,7 @@ const about = () => {
             </article>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi aspernatur alias excepturi saepe harum consectetur magni ratione reprehenderit repellat, a amet ab. Impedit quasi vel voluptate facilis enim libero facere?
+          Hello! I am Sheikh Shafayet Hossain I am a computer science graduate from the University of Manitoba. I am highly organized and detail oriented about my field of work and my life. I have had experience handling clients and their expectations. I have helped stakeholders resolve their concerns by providing tailored solutions to them.  I am proficient in handling complex and sensitive information regarding college and clients. I have worked in a fast paced team managing multiple priorities and multiple deadlines with minimal supervision. I learn best with hands on experience, hence I have worked on a few personal projects while working on my school required projects.
           </p>
           
           <a href='#contacts' className='btn btn-primary'>Let's Talk</a>
