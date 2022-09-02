@@ -19,25 +19,25 @@ const data =[
   {
     avatar: AVTR1,
     name:"Skipthedishes",
-    review: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti deleniti dolores est tempora accusantium laudantium commodi adipisci eos blanditiis. Fuga optio dolorem officiis quis assumenda modi vel nesciunt error repudiandae.",
+    review: "Worked with a team in a fast paced environment to assist stake holders  with their concerns. Provided tailored solution to better assist them and made sure to keep information and details confidential. Worked on different projects to increase team productivity, overall performance and helped mentor a lot of new colleagues so they can thrive in their roles.",
   },
 
   {
     avatar: AVTR2,
     name:"Coding",
-    review: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti deleniti dolores est tempora accusantium laudantium commodi adipisci eos blanditiis. Fuga optio dolorem officiis quis assumenda modi vel nesciunt error repudiandae.",
+    review: "I am passionate about programming. I take challenges and complete goals. I have made a lot of personal projects to practice my skills and enrich my proficiency in certain topics. I have worked to create a lot of clone websites and also worked to create software that help me benefit my day to day work. ",
   },
 
   {
     avatar: AVTR3,
     name:"Hiking",
-    review: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti deleniti dolores est tempora accusantium laudantium commodi adipisci eos blanditiis. Fuga optio dolorem officiis quis assumenda modi vel nesciunt error repudiandae.",
+    review: "I am passionate about hiking. I mostly hike solo, but have hiked in groups as well. I find nature to be very alluring and relaxing. I often hike to destress and meditate. I have hiked in a lot of placed throughout Canada. I found Banff Moraine lake at dawn and Athabasca falls at dusk to be the very calming and very picturesque. ",
   },
 
   {
     avatar: AVTR4,
     name:"Reading",
-    review: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti deleniti dolores est tempora accusantium laudantium commodi adipisci eos blanditiis. Fuga optio dolorem officiis quis assumenda modi vel nesciunt error repudiandae.",
+    review: "I like to read on current affairs and self improvements books. I listen to podcasts and audio books on my commute, during walks or gym. I believe a good book can help debunk lot of life problems and give a fresh perspective on life or the problem. I also read manga on my free time. My current favourite book to read now is Your Next Five Moves, and my favourite manga is One piece.",
   }
 ]
 
