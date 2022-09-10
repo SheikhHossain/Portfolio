@@ -31,27 +31,6 @@ const data =[
     github: 'https://github.com/SheikhHossain/TechTakeaway.git',
     demo:"https://sheikhhossain.github.io/TechTakeaway/",
   },
-  {
-    id:4,
-    image: IMG4,
-    title: 'project 1',
-    github: 'https://github.com',
-    demo:"https://github.com",
-  },
-  {
-    id:5,
-    image: IMG5,
-    title: 'project 1',
-    github: 'https://github.com',
-    demo:"https://github.com",
-  },
-  {
-    id:6,
-    image: IMG6,
-    title: 'project 1',
-    github: 'https://github.com',
-    demo:"https://github.com",
-  }
 ]
 const portfolio = () => {
   return (
