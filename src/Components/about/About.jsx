@@ -14,7 +14,7 @@ const about = () => {
       <div className="container about__container">
         <div className='about__me'>
           <div className="about__me-image">
-            <img src={ME} alt="About Image"/>
+            <img src={ME} alt="Sheikh Shafayet Hossain"/>
           </div>
         </div>
 
@@ -40,7 +40,13 @@ const about = () => {
             </article>
           </div>
           <p>
-          Hello! I am Sheikh Shafayet Hossain I am a computer science graduate from the University of Manitoba. I am highly organized and detail oriented about my field of work and my life. I have had experience handling clients and their expectations. I have helped stakeholders resolve their concerns by providing tailored solutions to them.  I am proficient in handling complex and sensitive information regarding college and clients. I have worked in a fast paced team managing multiple priorities and multiple deadlines with minimal supervision. I learn best with hands on experience, hence I have worked on a few personal projects while working on my school required projects.
+            Hello! I'm Sheikh Shafayet Hossain, a computer science graduate from the University of Manitoba. I'm highly organized and detail-oriented, both in my work and in my life.
+          </p>
+          <p>
+            I've managed client expectations and helped stakeholders resolve their concerns with tailored solutions, and I'm trusted with complex, sensitive information. I've worked in fast-paced teams juggling multiple priorities and deadlines with minimal supervision.
+          </p>
+          <p>
+            I learn best hands-on, so alongside my school projects I've built a number of personal ones.
           </p>
           
           <a href='#contacts' className='btn btn-primary'>Let's Talk</a>

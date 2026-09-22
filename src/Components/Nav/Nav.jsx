@@ -1,22 +1,51 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Nav.css'
-import {AiOutlineHome} from 'react-icons/ai'
-import {AiOutlineUser} from 'react-icons/ai'
-import {BiBook} from 'react-icons/bi'
-import {RiServiceFill} from 'react-icons/ri'
-import {BiMessageSquareDetail} from 'react-icons/bi'
-import { useState } from 'react'
+import {AiOutlineHome, AiOutlineUser} from 'react-icons/ai'
+import {BiBook, BiMessageSquareDetail, BiCodeAlt} from 'react-icons/bi'
+import {RiServiceFill, RiBriefcaseLine} from 'react-icons/ri'
+
+const links = [
+  { href: '#',             label: 'Home',       Icon: AiOutlineHome },
+  { href: '#about',        label: 'About',      Icon: AiOutlineUser },
+  { href: '#portfolio',    label: 'Projects',   Icon: BiCodeAlt },
+  { href: '#experience',   label: 'Skills',     Icon: RiServiceFill },
+  { href: '#services',     label: 'Courses',    Icon: BiBook },
+  { href: '#testimonials', label: 'Work & hobbies', Icon: RiBriefcaseLine },
+  { href: '#contacts',     label: 'Contact',    Icon: BiMessageSquareDetail },
+]
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState('#')
+
+  // Keep the highlight in sync with whatever section is in the middle of the screen
+  useEffect(() => {
+    const targets = [document.querySelector('header'), ...links.slice(1).map(l => document.querySelector(l.href))].filter(Boolean)
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveNav(entry.target.tagName === 'HEADER' ? '#' : `#${entry.target.id}`)
+        }
+      })
+    }, { rootMargin: '-50% 0px -50% 0px' })
+    targets.forEach(t => observer.observe(t))
+    return () => observer.disconnect()
+  }, [])
+
   return (
-    <nav>
-      <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}> <AiOutlineHome/> </a>
-      <a href="#about"onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><AiOutlineUser/></a>
-      <a href="#experience" onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}> <RiServiceFill/> </a>
-      <a href="#services"  onClick={() => setActiveNav('#services')} className={activeNav === '#services' ? 'active' : ''}><BiBook/></a>
-      <a href="#contacts" onClick={() => setActiveNav('#contacts')} className={activeNav === '#contacts' ? 'active' : ''}> <BiMessageSquareDetail/> </a>
-      
+    <nav aria-label='Sections'>
+      {links.map(({ href, label, Icon }) => (
+        <a
+          key={href}
+          href={href}
+          aria-label={label}
+          title={label}
+          aria-current={activeNav === href ? 'location' : undefined}
+          onClick={() => setActiveNav(href)}
+          className={activeNav === href ? 'active' : ''}
+        >
+          <Icon aria-hidden='true' />
+        </a>
+      ))}
     </nav>
   )
 }

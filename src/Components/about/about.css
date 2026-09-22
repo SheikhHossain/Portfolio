@@ -24,6 +24,10 @@
     transform: rotate(0);
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .about__me-image { transform: none; }
+}
+
 .about__cards {
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -40,8 +44,8 @@
 }
 
 .about__card:hover{
-    background: transparent;
-    background-color: var(--color-primary-variant);
+    background: var(--color-bg-hover);
+    border-color: var(--color-primary-variant);
     cursor: default;
 }
 
@@ -56,14 +60,18 @@
 }
 
 .about__card small {
-    font-size: 0.7;
+    font-size: 0.8rem;
     color: var(--color-light);
 }
 
 .about__content p{
-    margin: 2rem 0 2.6rem;
+    margin: 1.2rem 0;
     color: var(--color-light);
+    max-width: 65ch;
 }
+
+.about__content p:first-of-type { margin-top: 2rem; }
+.about__content p:last-of-type { margin-bottom: 2.6rem; }
 
 /* =========== MEDIUM QUERIES (MEDIUM DEVICES) =========== */
 @media screen and (max-width: 1024px) {

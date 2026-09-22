@@ -13,12 +13,13 @@
 }
 
 .portfolio__item:hover {
-    border-color: var(--color-primary-varient);
-    background: transparent;
+    border-color: var(--color-primary-variant);
+    background: var(--color-bg-hover);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
 }
 
 .portfolio__item-image {
-    border-radius: 1.5 rem;
+    border-radius: 1.5rem;
     overflow: hidden;
 }
 

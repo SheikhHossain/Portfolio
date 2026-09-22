@@ -46,7 +46,7 @@ const data =[
     demo:"https://github.com/SheikhHossain/Ixalan",
   },
   {
-    id:5,
+    id:6,
     image: IMG6,
     title: 'Home Task Manager',
     github: 'https://github.com/SheikhHossain/HCIMS3',
@@ -69,8 +69,14 @@ const portfolio = () => {
                   <img src={image} alt={title} /></div>
                 <h3>{title}</h3>
                 <div className="portfolio__item-cta">
-                  <a href={github} className='btn' target='_blank' >Github</a>
-                  <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
+                  {demo === github || demo.includes('github.com/') ? (
+                    <a href={github} className='btn btn-primary' target='_blank' rel='noreferrer'>View on GitHub</a>
+                  ) : (
+                    <>
+                      <a href={github} className='btn' target='_blank' rel='noreferrer'>GitHub</a>
+                      <a href={demo} className='btn btn-primary' target='_blank' rel='noreferrer'>Live Demo</a>
+                    </>
+                  )}
                 </div>
               </article>
             )

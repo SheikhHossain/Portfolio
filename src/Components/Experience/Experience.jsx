@@ -6,11 +6,11 @@ const Experience = () => {
   return (
     <section id='experience'>
       <h5>What Skills I Have</h5>
-      <h2>My Experince</h2>
+      <h2>Skills</h2>
 
-      <div className='continer experience__container'>
+      <div className='container experience__container'>
         <div className="experince__frontend">
-        <h3>Frontend Developement</h3>
+        <h3>Frontend Development</h3>
           <div className='experience__content'>
 
 
@@ -49,7 +49,7 @@ const Experience = () => {
             <article className='experience__details'>
                <BsPatchCheckFill className='experience__detail-icon' />
                <div>
-                <h4>MarkDown</h4>
+                <h4>Markdown</h4>
                 <small className='text-light'>Experienced</small>
                </div>
             </article>
@@ -57,7 +57,7 @@ const Experience = () => {
             <article className='experience__details'>
                <BsPatchCheckFill className='experience__detail-icon' />
                <div>
-                <h4>YMAL</h4>
+                <h4>YAML</h4>
                 <small className='text-light'>Basic</small>
                </div>
             </article>
@@ -65,7 +65,7 @@ const Experience = () => {
         </div>
 {/* End of Front end */}
         <div className="experince__backend">
-          <h3>Backend Developement</h3>
+          <h3>Backend Development</h3>
           <div className='experience__content'>
 
           <article className='experience__details'>
@@ -129,7 +129,7 @@ const Experience = () => {
         </div>
 
         <div className="experince__ToolKits">
-          <h3>Querry Langauges</h3>
+          <h3>Query Languages</h3>
           <div className='experience__content'>
 
           <article className='experience__details'>
@@ -143,7 +143,7 @@ const Experience = () => {
             <article className='experience__details'>
                <BsPatchCheckFill className='experience__detail-icon'/>
                <div>
-                <h4>SQLlite3</h4>
+                <h4>SQLite3</h4>
                 <small className='text-light'>Beginner</small>
                </div>
             </article>
@@ -193,7 +193,7 @@ const Experience = () => {
             <article className='experience__details'>
                <BsPatchCheckFill className='experience__detail-icon'/>
                <div>
-                <h4>XCodes</h4>
+                <h4>Xcode</h4>
                 <small className='text-light'>Basic</small>
                </div>
             </article>

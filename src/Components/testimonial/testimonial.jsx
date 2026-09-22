@@ -6,13 +6,14 @@ import AVTR3 from '../../assets/avatar3.jpg'
 import AVTR4 from '../../assets/avatar4.jpg'
 
 // import Swiper core and required modules
-import { Pagination} from 'swiper';
+import { Pagination, Navigation } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 
 const data =[
@@ -31,7 +32,7 @@ const data =[
   {
     avatar: AVTR3,
     name:"Hiking",
-    review: "I am passionate about hiking. I mostly hike solo, but have hiked in groups as well. I find nature to be very alluring and relaxing. I often hike to destress and meditate. I have hiked in a lot of placed throughout Canada. I found Banff Moraine lake at dawn and Athabasca falls at dusk to be the very calming and very picturesque. ",
+    review: "I am passionate about hiking. I mostly hike solo, but have hiked in groups as well. I find nature to be very alluring and relaxing. I often hike to destress and meditate. I have hiked in a lot of places throughout Canada. I found Banff Moraine lake at dawn and Athabasca falls at dusk to be the very calming and very picturesque. ",
   },
 
   {
@@ -45,10 +46,10 @@ const testimonial = () => {
   return (
     <section id='testimonials'>
       <h5>Some of my</h5>
-      <h2>Work Experince And Hobbies</h2>
+      <h2>Work Experience and Hobbies</h2>
 
-      <Swiper className="container testimonials_continer" // install Swiper modules
-      modules={[Pagination]}
+      <Swiper className="container testimonials__container" // install Swiper modules
+      modules={[Pagination, Navigation]}
       spaceBetween={40}
       slidesPerView={1}
       navigation
@@ -58,7 +59,7 @@ const testimonial = () => {
           return(
             <SwiperSlide key={index} className="testimonial">
             <div className="client__avatar">
-              <img src={avatar} />
+              <img src={avatar} alt="" />
             </div>
             <h5 className='client__name'>{name}</h5>
               <small className='client__review'>

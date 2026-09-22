@@ -21,7 +21,7 @@
 }
 
 .contact__option:hover{
-    background: transparent;
+    background: var(--color-bg-hover);
     border-color: var(--color-primary-variant);
 }
 
@@ -47,11 +47,22 @@ form{
 input,textarea{
     width: 100%;
     padding: 1.5rem;
-    border-radius: 00.5rem;
+    border-radius: 0.5rem;
+    font: inherit;
     background: transparent;
     border: 2px solid var(--color-primary-variant);
     resize: none;
     color: var(--color-white);
+    transition: var(--transition);
+}
+
+input:focus-visible, textarea:focus-visible {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+input::placeholder, textarea::placeholder {
+    color: var(--color-light);
 }
 
 /* =========== MEDIUM QUERIES (MEDIUM DEVICES) =========== */
@@ -65,7 +76,7 @@ input,textarea{
 /* =========== MEDIUM QUERIES (SMALL DEVICES) =========== */
 @media screen and (max-width: 600px) {
     .container.contact__container{
-        width: var( --color-white);
+        width: var(--container-width-sm);
     }
 
 }

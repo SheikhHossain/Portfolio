@@ -13,18 +13,18 @@ const footer = () => {
       <ul className='permalinks'>
         <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#services">Courses</a></li>
         <li><a href="#portfolio">Projects</a></li>
-        <li><a href="#testimonial">Work Experience and Hobbies</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#experience">Skills</a></li>
+        <li><a href="#services">Courses</a></li>
+        <li><a href="#testimonials">Work Experience and Hobbies</a></li>
+        <li><a href="#contacts">Contact</a></li>
         
       </ul>
 
       <div className='footer__socials'>
-        <a href="https://facebook.com"><FaFacebookF/></a>
-        <a href="https://instagram.com"><FiInstagram/></a>
-        <a href="https://twitter.com"><IoLogoTwitter/></a>
+        <a href="https://facebook.com" aria-label="Facebook"><FaFacebookF/></a>
+        <a href="https://instagram.com" aria-label="Instagram"><FiInstagram/></a>
+        <a href="https://twitter.com" aria-label="Twitter"><IoLogoTwitter/></a>
       </div>
 
       

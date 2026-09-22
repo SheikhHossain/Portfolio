@@ -13,7 +13,7 @@
 }
 
 .experience__container > div:hover {
-    background: transparent;
+    background: var(--color-bg-hover);
     border-color: var(--color-primary-variant);
     cursor: default;
 }
@@ -58,7 +58,7 @@
 /* =========== MEDIUM QUERIES (SMALL DEVICES) =========== */
 @media screen and (max-width: 600px) {
     .experience__container{
-       gap: 1fr;
+       gap: 1.5rem;
     }
     .experience__container > div{
         width: 100%;
